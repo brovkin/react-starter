@@ -8,6 +8,7 @@ const App: FC = () => {
 
   const handleClick = () => {
     console.log('Click!');
+
     setClickTimes((prev) => prev + 1);
   };
 
