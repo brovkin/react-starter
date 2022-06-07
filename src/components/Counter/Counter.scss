@@ -1,0 +1,29 @@
+@import './src/assets/styles/imports';
+
+.counter {
+  &__wrapper {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+
+  &__title {
+    margin: 10px 0;
+  }
+
+  &__btn-wrapper {
+    border: 1px solid black;
+    padding: 10px 20px;
+
+    &_danger {
+      background-color: $danger;
+    }
+
+    &_warning {
+      background-color: $warning;
+    }
+
+    &_success {
+      background-color: $success;
+    }
+  }
+}
