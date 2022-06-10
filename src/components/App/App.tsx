@@ -1,6 +1,6 @@
 import React, { ChangeEvent, FC, useState } from 'react';
-import './App.scss';
 import Counter from '../Counter';
+import './App.scss';
 
 const App: FC = () => {
   const [text, setText] = useState<string>('Текст');

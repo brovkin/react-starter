@@ -1,5 +1,5 @@
 import { Middleware } from '@reduxjs/toolkit';
-import { addValue } from '../features/counter/counterSlice';
+import { addValue } from '@features/counter/counterSlice';
 
 export const counterMiddleware: Middleware =
   ({ getState, dispatch }) =>
