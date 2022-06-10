@@ -4,8 +4,8 @@ import {
   clearValue,
   decrement,
   increment,
-} from '../../features/counter/counterSlice';
-import { useAppDispatch, useAppSelector } from '../../app/hooks';
+} from '@features/counter/counterSlice';
+import { useAppDispatch, useAppSelector } from '@app/hooks';
 import './Counter.scss';
 
 const Counter: FC = () => {
