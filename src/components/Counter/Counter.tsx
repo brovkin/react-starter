@@ -6,10 +6,11 @@ import {
   increment,
 } from '@features/counter/counterSlice';
 import { useAppDispatch, useAppSelector } from '@app/hooks';
+import counterSelector from '@selectors/counter';
 import './Counter.scss';
 
 const Counter: FC = () => {
-  const counter = useAppSelector((state) => state.counter.value);
+  const counter = useAppSelector(counterSelector);
   const dispatch = useAppDispatch();
 
   return (

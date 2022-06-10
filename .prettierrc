@@ -9,6 +9,8 @@
     "^@features/(.*)$",
     "^@app/(.*)$",
     "^@assets/(.*)$",
+    "^@middlewares/(.*)$",
+    "^@selectors/(.*)$",
     "^@utils/(.*)$",
     "^[./]"
   ],
