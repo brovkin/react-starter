@@ -1,8 +1,8 @@
+import { counterMiddleware } from '@middlewares/counter';
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
-import { createLogger } from 'redux-logger';
 import { CurriedGetDefaultMiddleware } from '@reduxjs/toolkit/dist/getDefaultMiddleware';
-import { counterMiddleware } from '../middlewares/counter';
+import { createLogger } from 'redux-logger';
+import counterReducer from '@features/counter/counterSlice';
 
 const logger = createLogger({});
 
