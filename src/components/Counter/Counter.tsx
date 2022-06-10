@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import cn from 'classnames';
+import Icon from '@components/ui/Icon';
 import {
   clearValue,
   decrement,
@@ -15,6 +16,7 @@ const Counter: FC = () => {
 
   return (
     <div className="counter__wrapper">
+      <Icon type={'react'} />
       <div className="counter__title">Counter: {counter}</div>
       <div
         className={cn('counter__btn-wrapper', {
