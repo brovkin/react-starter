@@ -1,12 +1,14 @@
 import React, { FC } from 'react';
 import cn from 'classnames';
 import Icon from '@components/ui/Icon';
+import Image from '@components/ui/Image';
 import {
   clearValue,
   decrement,
   increment,
 } from '@features/counter/counterSlice';
 import { useAppDispatch, useAppSelector } from '@app/hooks';
+import ReactLogo from '@assets/images/react-logo-bg.jpg';
 import counterSelector from '@selectors/counter';
 import './Counter.scss';
 
@@ -16,7 +18,8 @@ const Counter: FC = () => {
 
   return (
     <div className="counter__wrapper">
-      <Icon type={'react'} />
+      <Image src={ReactLogo} alt="react-logo" />
+      <Icon type="react" />
       <div className="counter__title">Counter: {counter}</div>
       <div
         className={cn('counter__btn-wrapper', {
