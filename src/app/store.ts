@@ -1,12 +1,11 @@
-import { counterMiddleware } from '@middlewares/counter';
-import { configureStore } from '@reduxjs/toolkit';
+import { Middleware, configureStore } from '@reduxjs/toolkit';
 import { CurriedGetDefaultMiddleware } from '@reduxjs/toolkit/dist/getDefaultMiddleware';
 import { createLogger } from 'redux-logger';
-import counterReducer from '@features/counter/counterSlice';
+import counterReducer from '@features/counterSlice';
 
 const logger = createLogger({});
 
-const ADDED_MIDDLEWARES = [counterMiddleware, logger];
+const ADDED_MIDDLEWARES: Middleware[] = [logger];
 
 const addedMiddlewares = (
   getDefaultMiddleware: CurriedGetDefaultMiddleware
