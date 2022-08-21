@@ -1,37 +1,38 @@
 import React, { FC } from 'react';
-import cn from 'classnames';
-import {
-  clearValue,
-  decrement,
-  increment,
-} from '@features/counter/counterSlice';
+import Button from '@components/ui/Button';
+import { clearValue, decrement, increment } from '@features/counterSlice';
 import { useAppDispatch, useAppSelector } from '@app/hooks';
+import counterSelector from '@selectors/counter';
 import './Counter.scss';
 
 const Counter: FC = () => {
-  const counter = useAppSelector((state) => state.counter.value);
+  const counter = useAppSelector(counterSelector);
   const dispatch = useAppDispatch();
 
   return (
     <div className="counter__wrapper">
-      <div className="counter__title">Counter: {counter}</div>
-      <div
-        className={cn('counter__btn-wrapper', {
-          ['counter__btn-wrapper_danger']: counter <= 3,
-          ['counter__btn-wrapper_warning']: counter >= 4 && counter < 10,
-          ['counter__btn-wrapper_success']: counter >= 10,
-        })}
-      >
-        <button className="inc" onClick={() => dispatch(increment())}>
-          Inc
-        </button>
-        <button className="dec" onClick={() => dispatch(decrement())}>
-          Dec
-        </button>
-        <button className="clear" onClick={() => dispatch(clearValue())}>
-          Clear
-        </button>
+      <h1 className="counter__title">Counter</h1>
+      <div className="counter__number-wrapper">
+        <div className="counter__number">{counter}</div>
       </div>
+      <Button
+        className="counter__inc"
+        clickHandler={() => dispatch(increment())}
+      >
+        Increment
+      </Button>
+      <Button
+        className="counter__dec"
+        clickHandler={() => dispatch(decrement())}
+      >
+        Decrement
+      </Button>
+      <Button
+        className="counter__clear"
+        clickHandler={() => dispatch(clearValue())}
+      >
+        Clear
+      </Button>
     </div>
   );
 };
