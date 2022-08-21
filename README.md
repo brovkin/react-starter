@@ -8,5 +8,6 @@
 
 ### Для локального запуска
 
-1. Установите зависимости `npm i` или `yarn install`
-2. Запустите проект `npm run start` или `yarn run start`
+1. Склонируйте репозиторий `git clone https://github.com/brovkin/react-starter.git` или в существующую папку `git clone https://github.com/brovkin/react-starter.git .`
+2. Установите зависимости `npm i` или `yarn install`
+3. Запустите проект `npm run start` или `yarn run start`
