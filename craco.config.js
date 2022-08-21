@@ -9,8 +9,12 @@ module.exports = {
       '@assets': resolvePath('./src/assets'),
       '@components': resolvePath('./src/components'),
       '@features': resolvePath('./src/features'),
-      '@middlewares': resolvePath('./src/middlewares'),
       '@utils': resolvePath('./src/utils'),
+      '@hooks': resolvePath('./src/hooks'),
+      '@context': resolvePath('./src/context'),
+      '@selectors': resolvePath('./src/selectors'),
+      '@helpers': resolvePath('./src/helpers'),
+      '@constants': resolvePath('./src/constants'),
     },
   },
 };

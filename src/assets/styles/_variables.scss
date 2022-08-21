@@ -3,6 +3,30 @@ $font-family: 'Lato Regular', sans-serif;
 
 // colors
 
+$main-color: #fff;
+$main-bg-color: #000;
+$main-border: #000;
+
+
 $danger: #BB2124;
 $warning: #F0AD4E;
 $success: #22BB33;
+
+$error-bg: #f8d7da;
+$error-color: #f48668;
+$success-bg: #d4edda;
+$success-color: #155724;
+$success-border: #c3e6cb;
+
+// errors message
+
+$message-error-bg: $error-bg;
+$message-error-color: #721c24;
+
+// media queries
+
+$media-XS: 480px;
+$media-SM: 576px;
+$media-MD: 768px;
+$media-LG: 992px;
+$media-XL: 1200px;
