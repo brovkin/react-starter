@@ -12,7 +12,7 @@
     "react-starter",
     "starter-kit"
   ],
-  "homepage": "https://github.com/brovkin/react-starter",
+  "homepage": ".",
   "private": true,
   "license": "MIT",
   "repository": "https://github.com/brovkin/react-starter",
